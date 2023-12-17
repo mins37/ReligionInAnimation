@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif, 'Lobster', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.col1{width:25%; padding: 0px 10px;}
+.col2{width:50%; padding: 0px 10px;}
+.col3{width:75%; padding: 0px 10px;}
+.col4{width:100%; padding: 0px 10px;}
+
+
+.row {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mainLogo
+{
+    padding: 2rem 2rem 2rem 8rem;
+    align-items: left;
+    position: fixed; /* 고정 위치 설정 */
+    left: 0; /* 왼쪽에 정렬 */
+    top: 0; /* 상단에 정렬 */
+    width: 100px;
+    z-index: 1000;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5.5rem; /* 원하는 높이로 조절하세요 */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 100;
+    background-color: #ffffff;
+}
+
+
+#menu ul {
+    display: flex;
+    justify-content: flex-end; /* 오른쪽 정렬 */
+    align-items: center;
+    margin-right: 3rem;
+}
+
+#menu ul li {
+    width: 6rem;
+    height: 8rem;
+    text-align: center;
+    list-style: none;
+    user-select: none;
+    padding-top: 6.8rem;
+    padding-right: 3rem;
+    margin-left: -4.2rem; /* 메뉴 항목 간격을 조절하기 위해 margin-left 추가 */
+}
+
+.menu_b {
+    width: 33%;
+    padding-top: 0.3rem;
+}
+
+.menu_c {
+    width: 44%;
+}
+
+.image-container {
+    position: relative;
+    width: 100%; /* 가로 영역의 너비를 조절합니다. */
+    max-width: 80%; /* 필요에 따라 최대 너비를 조절합니다. */
+    height: 70vh;
+    margin: 13rem auto; /* 중앙 정렬을 위해 추가합니다. */
+}
+
+.main_img {
+    transition: transform 0.3s ease-in-out;
+    width: 30%;
+    max-width: 800px;
+    position:absolute;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.main_img.selected {
+    transform: scale(1.5);
+}
+
+
+#footer
+{
+    font-family: 'Lobster', sans-serif;
+    position: fixed;
+    bottom:0;
+    font-size: 0.8rem;
+    width:100%;
+    height:4rem;
+    text-align: left;
+    color:#ff0086;
+    padding:0rem 0rem 1.5rem 17rem;
+}
+
+
+.btn_m{
+    border:none;
+    background-color: white;
+}
+
+.link{
+    display: none;
+}
+
+.link a{
+    font-size: 1.8rem;
+    margin-right: 2rem;
+}
+
+.hambergBtn{
+    display: none;
+    width: 1.8rem;
+    position: absolute;
+    padding: 2.7rem 2rem 2rem 2rem;
+}
+
+
+@media (max-width:768px)
+{
+    .mainLogo
+    {
+        padding: 2rem 2rem 2rem 2rem;
+        align-items: left;
+        position: fixed; /* 고정 위치 설정 */
+        left: 0; /* 왼쪽에 정렬 */
+        top: 0; /* 상단에 정렬 */
+        width: 90px;
+        z-index: 1000;
+    }
+
+    #menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: 0; /* 변경된 부분: 오른쪽에서 나오도록 수정 */
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        z-index: 10000;
+    }
+
+    .link {
+        display: none;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+
+    .link.active {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    /* 햄버거 아이콘의 스타일 추가 */
+    .hambergBtn {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 0; /* 변경된 부분: 맨 상단에 정렬 */
+        right: 0; /* 변경된 부분: 맨 우측에 정렬 */
+    }
+
+    /* 모바일 버전에서 메뉴 숨기기 */
+    #menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #menu ul {
+        display: none;
+    }
+
+    /* 활성화된 경우 메뉴 표시 */
+    #menu.active ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu ul li {
+        width: 130%;
+        height: 6rem;
+        list-style: none;
+        user-select: none;
+        padding-top: 1rem;
+        margin: 0;
+    }
+
+    .row{
+        margin-right: 0;
+    }
+
+    #footer
+    {
+        font-size: 0.7rem;
+        padding:0rem 0rem 0.5rem 3rem;
+    }
+    
+    .image-container {
+        position: relative;
+        width: 100%;
+        max-width: 80%;
+        height: 100vh;
+        margin: 18rem auto;
+        flex-direction: column; /* 변경된 부분: 이미지가 세로로 배치되도록 컨테이너의 방향을 column으로 변경 */
+    }
+
+    .main_img {
+        width: 30%; 
+        max-width: 800px;
+    }
+}
+

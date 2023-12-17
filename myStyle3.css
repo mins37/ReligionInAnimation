@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif, 'Lobster', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    scrollbar-width: none;
+}
+
+
+.col1{width:16.6%; padding:1rem;}
+.col2{width:33.3%; padding:1rem;}
+.col3{width:50%; padding:1rem;}
+.col4{width:66.4%; padding:1rem;}
+.col5{width:83%; padding:1rem;}
+.col6{width:100%;}
+.col7{width:100%;}
+
+/*padding 없는거*/
+.col2-1{width:33.3%; padding:0px;}
+
+.row {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mainLogo
+{
+    padding: 2rem 2rem 2rem 8rem;
+    align-items: left;
+    position: fixed; /* 고정 위치 설정 */
+    left: 0; /* 왼쪽에 정렬 */
+    top: 0; /* 상단에 정렬 */
+    width: 100px;
+    z-index: 1000;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 7rem;
+}
+
+
+.content-section {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: left;
+    margin: 1rem;
+    position: relative;
+    /*border: 1px solid #ff0086;*/
+    justify-content: center;
+}
+
+.content-section1 {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+    /*border: 1px solid #ff0086;*/
+    justify-content: center;
+}
+
+.content-section2 {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: left;
+    position: relative;
+    /*border: 1px solid #ff0086;*/
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+
+.content-section img {
+    width: 100%; /* 이미지는 섹션의 50% 크기로 지정 */
+}
+
+
+
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5.5rem; /* 원하는 높이로 조절하세요 */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 100;
+    background-color: #ffffff;
+}
+
+
+#menu ul {
+    display: flex;
+    justify-content: flex-end; /* 오른쪽 정렬 */
+    align-items: center;
+    margin-right: 3rem;
+}
+
+#menu ul li {
+    width: 6rem;
+    height: 8rem;
+    text-align: center;
+    list-style: none;
+    user-select: none;
+    padding-top: 6.8rem;
+    padding-right: 3rem;
+    margin-left: -4.2rem; /* 메뉴 항목 간격을 조절하기 위해 margin-left 추가 */
+}
+
+.menu_b {
+    width: 33%;
+    padding-top: 0.3rem;
+}
+
+.menu_c {
+    width: 44%;
+}
+
+
+/*m=제목, s=소제목, i=본문 p=보라색소제목*/
+
+.text_m{
+    font-size: 1.7rem;
+    color:#ff0086;
+    line-height: 2rem;
+    font-weight: 700;
+}
+.text_s{
+    font-size: 1.2rem;
+    color:#ff0086;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+.text_i{
+    font-size: 1rem;
+    color:#ff0086;
+    line-height: 1.6rem;
+    font-weight: 300;
+}
+
+/*p=보라색제목 x=제목 x2=소제목 t=보라색본문 g=강조*/
+
+.text_p{
+    font-size:1.4rem;
+    color:white;
+    background-color: #6300ff;
+    border-radius: 2rem;
+    margin-top: 6rem;
+    padding:0.5rem 1rem 0.5rem 1rem;
+}
+
+.text_x{
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    color: #6300ff;
+    text-align: center;
+}
+
+.text_x2{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: #6300ff;
+    text-align: center;
+}
+
+.text_t{
+    font-size: 1rem;
+    font-weight:250;
+    line-height: 1.5rem;
+    color: #6300ff;
+    text-align: center;
+}
+
+.text_g{
+    font-size: 1rem;
+    font-weight:450;
+    line-height: 1.5rem;
+    color: #6300ff;
+    text-align: center;
+}
+
+.main_text{
+    margin-left:2rem;
+}
+
+/*스티커*/
+
+/*천주교*/
+#myStickerA{
+    width: 35rem;
+    height: 25rem;
+    background-image: url(img/sticker/sticker_1.png);
+    background-size: cover;
+    position: absolute;
+    top: 46rem;
+    left: 23rem;
+    transform: rotate(-10deg);
+}
+
+#myStickerA:hover{
+    transform: rotate(10deg);
+}
+
+/*기독교*/
+#myStickerB{
+    width: 27rem;
+    height: 17rem;
+    background-image: url(img/sticker/sticker_3.png);
+    background-size: cover;
+    position: absolute;
+    top: 49rem;
+    left: 27rem;
+    transform: rotate(-10deg);
+}
+
+#myStickerB:hover{
+    background-image: url(img/sticker/sticker_3_1.png);
+    transform: rotate(10deg);
+}
+
+/*불교*/
+#myStickerC{
+    width: 30rem;
+    height: 20rem;
+    background-image: url(img/sticker/sticker_2.png);
+    background-size: cover;
+    position: absolute;
+    top: 46rem;
+    left: 24rem;
+    transform: rotate(-10deg);
+}
+
+#myStickerC:hover{
+    background-image: url(img/sticker/sticker_2_1.png);
+}
+
+/*그외종교*/
+#myStickerD{
+    width: 30rem;
+    height: 20rem;
+    background-image: url(img/sticker/sticker_4.png);
+    background-size: cover;
+    position: absolute;
+    top: 49rem;
+    left: 28rem;
+    transform: rotate(-10deg);
+}
+
+#myStickerD:hover{
+    transform: rotate(5deg);
+}
+
+/*작은스티커*/
+#myStickerMini_1{
+    width: 23rem;
+    height: 18rem;
+    background-image: url(img/sticker/sticker_mini_1.png);
+    background-size: cover;
+    position: absolute;
+    top: -5rem;
+    left: -6rem;
+    transform: rotate(-10deg);
+}
+
+#myStickerMini_2{
+    width: 23rem;
+    height: 18rem;
+    background-image: url(img/sticker/sticker_mini_4.png);
+    background-size: cover;
+    position: absolute;
+    top: -5rem;
+    left: -5rem;
+    transform: rotate(-10deg);
+}
+
+#myStickerMini_3{
+    width: 25rem;
+    height: 30rem;
+    background-image: url(img/sticker/sticker_mini_5.png);
+    background-size: cover;
+    position: absolute;
+    top: 2rem;
+    left: -18rem;
+}
+
+#myStickerMini_4{
+    width: 23rem;
+    height: 18rem;
+    background-image: url(img/sticker/sticker_mini_4.png);
+    background-size: cover;
+    position: absolute;
+    top: -5rem;
+    left: -5rem;
+    transform: rotate(-10deg);
+}
+
+/*클릭스티커*/
+#myStickerMini_5{
+    width: 20rem;
+    height: 15rem;
+    background-image: url(img/sticker/sticker_mini_7.png);
+    background-size: cover;
+    position: absolute;
+}
+
+#myStickerMini_5:hover{
+    background-image: url(img/sticker/sticker_mini_7_1.png);
+}
+
+/*제목스티커*/
+#myStickerMain{
+    width: 20rem;
+    height: 15rem;
+    background-image: url(img/sticker/sticker_mini_3.png);
+    background-size: cover;
+    position: absolute;
+}
+
+
+#footer
+{
+    font-family: 'Lobster', sans-serif;
+    background-color: #ff0086;
+    bottom:0;
+    font-size: 0.7rem;
+    width:100%;
+    height:4rem;
+    text-align: left;
+    color:#ffffff;
+    padding:0rem 0rem 1rem 8rem;
+}
+
+body::-webkit-scrollbar {
+    width: 0;  /* 세로 스크롤 바 너비를 0으로 설정 */
+  }
+
+  .link{
+    display: none;
+}
+
+.link a{
+    font-size: 1.8rem;
+    margin-right: 2rem;
+}
+
+.hambergBtn{
+    display: none;
+    width: 1.8rem;
+    position: absolute;
+    padding: 2.5rem 2rem 2rem 2rem;
+}
+
+.btn_gotop {
+	display:none;
+	position:fixed;
+	bottom:30px;
+	right:30px;
+	z-index:999;
+	border:1px solid #ccc;
+	outline:none;
+	background-color:white;
+	color:#333;
+	cursor:pointer;
+	padding:15px 20px;
+	border-radius:100%;
+}
+
+  @media (max-width:768px)
+{
+    .mainLogo
+    {
+        padding: 2rem 2rem 2rem 2rem;
+        align-items: left;
+        position: fixed; /* 고정 위치 설정 */
+        left: 0; /* 왼쪽에 정렬 */
+        top: 0; /* 상단에 정렬 */
+        width: 90px;
+        z-index: 1000;
+
+    }
+
+    #menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 0; /* 변경된 부분: 오른쪽에서 나오도록 수정 */
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        z-index: 10000;
+    }
+
+    .link {
+        display: none;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 1rem;
+        
+    }
+
+    .link.active {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    /* 햄버거 아이콘의 스타일 추가 */
+    .hambergBtn {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 0; /* 변경된 부분: 맨 상단에 정렬 */
+        right: 0; /* 변경된 부분: 맨 우측에 정렬 */
+        
+    }
+
+    /* 모바일 버전에서 메뉴 숨기기 */
+    #menu {
+        display: flex;
+        position: unset;
+        justify-content: flex-end;
+        
+    }
+
+    #menu ul {
+        display: none;
+    }
+
+    /* 활성화된 경우 메뉴 표시 */
+    #menu.active ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu ul li {
+        width: 130%;
+        height: 6rem;
+        list-style: none;
+        user-select: none;
+        padding-top: 1rem;
+        margin: 0;
+    }
+
+    .row{
+        margin-right: 0;
+    }
+
+    #footer
+    {
+        font-size: 0.7rem;
+        padding:0rem 0rem 0rem 2rem;
+        width:92%;
+        height:4rem;
+    }
+
+    .content-section {
+        width: 100%; /* 콘텐츠 섹션 폭을 화면 크기에 맞게 조절 */
+        margin: 0 auto; /* 중앙 정렬 추가 */
+        display: inline-block;
+    }
+
+    .content-container {
+        margin-top: 3rem; /* 모바일에서 상단 여백 축소 */
+        
+    }
+
+    #myStickerA, #myStickerB, #myStickerC, #myStickerD,
+    #myStickerMini_1, #myStickerMini_2, #myStickerMini_3, #myStickerMini_4,
+    #myStickerMini_5, #myStickerMain {
+        width: 100%; /* 스티커와 이미지 너비를 100%로 설정하여 화면에 맞게 조절 */
+        height: auto; /* 높이 자동으로 조절 */
+        display: none;
+    }
+
+    /* 제목 스티커 크기 조절 */
+    #myStickerMain {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+    .col7{
+        width: 90%;
+    }
+
+    
+
+
+    .col2-1{
+        width: 85%;
+    }
+
+    .content-section1 img{
+        width: 30%; /* 이미지를 부모 요소의 100%로 만듭니다. */
+        height: auto; /* 비율을 유지하면서 크기를 조정합니다. */
+        margin-right: 0; /* 오른쪽 여백을 제거합니다. */
+    }
+    
+    .content-section2 img {
+        width: 32%; /* 이미지를 부모 요소의 100%로 만듭니다. */
+        height: auto; /* 비율을 유지하면서 크기를 조정합니다. */
+        margin-right: 0; /* 오른쪽 여백을 제거합니다. */
+        margin-bottom: -1rem; 
+    }
+    
+    .content-section.row {
+        flex-direction: column; /* 텍스트와 이미지를 세로로 배치합니다. */
+    }
+
+    .content-section.row img {
+        width: 100%; /* 이미지를 부모 요소의 100%로 만듭니다. */
+        margin-top: 10px; /* 이미지 위에 간격을 줍니다. */
+    }
+
+    .content-section.row .col6 {
+        margin-left: 0; /* 모바일 버전에서 왼쪽 여백을 없앱니다. */
+    }
+
+    /*m=제목, s=소제목, i=본문 p=보라색소제목*/
+
+    .text_m{
+        font-size: 1.2rem;
+        line-height: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    .text_s{
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    .text_i{
+        font-size: 0.8rem;
+        line-height: 1rem;
+        text-align: center;
+    }
+
+    .main_text{
+        margin-left:0rem;
+    }
+    
+
+    /*p=보라색제목 x=제목 x2=소제목 t=보라색본문 g=강조*/
+
+    .text_p{
+        font-size:1.1rem;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    .text_x{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .text_x2{
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
+    .text_t{
+        font-size: 0.8rem;
+        font-weight:400;
+    }
+
+    .text_g{
+        font-size: 0.85rem;
+        font-weight:450;
+    }
+
+}
+
+/*맨위로 올라가는 버튼*/
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: #ff0086;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #ff00889a;
+}
